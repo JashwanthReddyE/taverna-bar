@@ -903,7 +903,7 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .container { width: min(100% - 1.2rem, var(--maxw)); }
   .brand-mark { width: 32px; height: 32px; font-size: 1.1rem; }
   .brand-name { font-size: 1.05rem; }
-  .brand-name small { display: none; }
+  .brand-name small { font-size: 0.5rem; letter-spacing: 0.18em; }
   .lang button { padding: 0.25rem 0.5rem; font-size: 0.75rem; }
   .burger { width: 38px; height: 38px; border-radius: 8px; }
   .burger span { width: 16px; margin: 3px auto; }
