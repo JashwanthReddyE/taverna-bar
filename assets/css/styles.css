@@ -899,3 +899,16 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .lb-prev { left: 1vw; } .lb-next { right: 1vw; }
   .about-statsrow .stats { grid-template-columns: 1fr; }
 }
+@media (max-width: 480px) {
+  .container { width: min(100% - 1.2rem, var(--maxw)); }
+  .brand-mark { width: 32px; height: 32px; font-size: 1.1rem; }
+  .brand-name { font-size: 1.05rem; }
+  .brand-name small { display: none; }
+  .lang button { padding: 0.25rem 0.5rem; font-size: 0.75rem; }
+  .burger { width: 38px; height: 38px; border-radius: 8px; }
+  .burger span { width: 16px; margin: 3px auto; }
+  .burger.open span:nth-child(1) { transform: translateY(5px) rotate(45deg); }
+  .burger.open span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
+  .nav-actions { gap: 0.5rem; }
+  .nav { gap: 0.5rem; }
+}
