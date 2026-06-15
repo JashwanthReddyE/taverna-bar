@@ -627,7 +627,7 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .footer-brand { grid-column: 1 / -1; }
 }
 
-@media (max-width: 1060px) {
+@media (max-width: 1200px) {
   .nav-links, .status { display: none; }
   .burger { display: block; }
   .nav-cta {
@@ -660,7 +660,7 @@ html.js .reveal.in { opacity: 1; transform: none; }
   .nav-links .mobile-status { display: inline-flex; align-self: flex-start; }
 }
 
-@media (min-width: 1061px) { .nav-links .mobile-cta, .nav-links .mobile-status { display: none; } }
+@media (min-width: 1201px) { .nav-links .mobile-cta, .nav-links .mobile-status { display: none; } }
 
 @media (max-width: 560px) {
   .field-row { grid-template-columns: 1fr; }
