@@ -630,6 +630,12 @@ html.js .reveal.in { opacity: 1; transform: none; }
 @media (max-width: 1060px) {
   .nav-links, .status { display: none; }
   .burger { display: block; }
+  .nav-cta {
+    padding: 0.65rem 1.2rem;
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
 
   .nav-links {
     position: fixed;
