@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taverna — Le Club Social et Bar de Montréal</title>
+  <meta name="description" content="Le bar-discothèque mythique au coin de Rachel et Saint-Denis. DJ, danse, sports pis du bon temps — bienvenue chez vous." />
+  <meta name="theme-color" content="#0b0a10" />
+  <meta property="og:title" content="Taverna — Le Club Social et Bar de Montréal" />
+  <meta property="og:description" content="Le bar-discothèque mythique du Plateau-Mont-Royal. DJ, danse, sports & bon temps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_CA" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#accueil" aria-label="Taverna — accueil">
+        <span class="brand-mark">T</span>
+        <span class="brand-name">TAVERNA<small>MONTRÉAL · MTL</small></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="#accueil" class="active" data-i18n="nav.home">Accueil</a>
+        <a href="#experience" data-i18n="nav.experience">L'Expérience</a>
+        <a href="#programmation" data-i18n="nav.lineup">Programmation</a>
+        <a href="#reservations" data-i18n="nav.reservations">Réservations</a>
+        <a href="#galerie" data-i18n="nav.gallery">Galerie</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+
+        <span class="status mobile-status" data-status>
+          <span class="dot"></span><span class="status-label">…</span>
+        </span>
+        <a href="#reservations" class="btn btn-primary mobile-cta" data-i18n="nav.reserve">Réserver</a>
+      </nav>
+
+      <div class="nav-actions">
+        <span class="status" data-status>
+          <span class="dot"></span><span class="status-label">…</span>
+        </span>
+
+        <div class="lang" role="group" aria-label="Language / Langue">
+          <button data-lang-btn="fr" class="active" aria-pressed="true">FR</button>
+          <button data-lang-btn="en" aria-pressed="false">EN</button>
+        </div>
+
+        <a href="#reservations" class="btn btn-primary nav-cta" data-i18n="nav.reserve">Réserver</a>
+
+        <button class="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="scrim"></div>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="accueil">
+      <div class="hero-bg" aria-hidden="true">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="Images/bar.webp">
+          <source src="Images/fancy-shot.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="hero-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+      <!-- Fleur-de-lis watermark — Québécois touch -->
+      <svg class="hero-fleur" viewBox="0 0 100 130" aria-hidden="true">
+        <path fill="#3d7bff" d="M50 4c4 10-2 18-2 26 6-4 16-2 16 8 0 8-8 12-14 11 5 6 14 6 14 16 0 8-8 13-16 11 3 5 3 12 0 18l-3 6-3-6c-3-6-3-13 0-18-8 2-16-3-16-11 0-10 9-10 14-16-6 1-14-3-14-11 0-10 10-12 16-8 0-8-6-16-2-26 2-5 8-9 10 0z"/>
+      </svg>
+
+      <div class="container">
+        <div class="hero-inner">
+          <p class="eyebrow reveal" data-i18n="hero.eyebrow">Plateau Mont-Royal · Montréal</p>
+          <h1 class="reveal" data-delay="1"><span class="text-grad">TAVERNA</span></h1>
+          <p class="tagline reveal" data-delay="2" data-i18n="hero.tagline">Le Club Social et Bar de Montréal</p>
+          <p class="lede reveal" data-delay="3" data-i18n="hero.lede">Le bar-discothèque mythique au coin de Rachel et Saint-Denis. DJ, danse, sports pis du bon temps — bienvenue chez vous.</p>
+          <div class="hero-cta reveal" data-delay="4">
+            <a href="#reservations" class="btn btn-primary btn-lg" data-i18n="hero.cta1">Réserver une table</a>
+            <a href="#programmation" class="btn btn-ghost btn-lg" data-i18n="hero.cta2">Voir la programmation</a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#experience" class="hero-scroll" aria-hidden="true">
+        <span data-i18n="hero.scroll">Descends voir ça</span>
+        <span class="mouse"></span>
+      </a>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span><span data-i18n="marquee.1">Bienvenue chez nous</span> <em class="star">✦</em></span>
+        <span><span data-i18n="marquee.2">DJ les fins de semaine</span> <em class="star">✦</em></span>
+        <span><span data-i18n="marquee.3">Système de son Meyer</span> <em class="star">✦</em></span>
+        <span><span data-i18n="marquee.4">Karaoké</span> <em class="star">✦</em></span>
+        <span><span data-i18n="marquee.5">Hockey du Canadien</span> <em class="star">✦</em></span>
+        <span><span data-i18n="marquee.6">Billard & babyfoot</span> <em class="star">✦</em></span>
+        <span><span data-i18n="marquee.7">On se voit à soir !</span> <em class="star">✦</em></span>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="experience">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-copy">
+            <p class="eyebrow reveal" data-i18n="about.eyebrow">Notre histoire</p>
+            <h2 class="reveal" data-delay="1" style="font-family:var(--ff-display);font-weight:800;font-size:clamp(2rem,5.2vw,3.4rem);line-height:1.05;letter-spacing:-0.02em;margin-top:1rem;" data-i18n="about.title">Plus qu'un bar — un vrai club social</h2>
+            <p class="reveal" data-delay="2" data-i18n="about.p1">Niché au 2<sup>e</sup> étage au coin de Rachel et Saint-Denis, Taverna c'est l'endroit où le Plateau se rassemble pour danser, célébrer pis refaire le monde jusqu'aux petites heures.</p>
+            <p class="reveal" data-delay="2" data-i18n="about.p2">Des <span class="hl">DJ du jeudi au samedi</span>, un système de son Meyer qui fait vibrer le plancher, des tables de billard, du babyfoot et une terrasse à portes de garage qui s'ouvre grand sur la ville. Icitte, t'es jamais un étranger ben longtemps.</p>
+          </div>
+
+          <figure class="about-media reveal" data-delay="1">
+            <img src="Images/entrance.JPG" alt="L'entrée illuminée par l'enseigne au néon rouge de Taverna" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="about-statsrow">
+          <div class="stats">
+            <div class="stat reveal" data-delay="1"><div class="num" data-i18n="about.stat1.num">JEU→SAM</div><div class="label" data-i18n="about.stat1.label">DJ sur le plancher</div></div>
+            <div class="stat reveal" data-delay="2"><div class="num" data-i18n="about.stat2.num">Meyer</div><div class="label" data-i18n="about.stat2.label">Système de son pro</div></div>
+            <div class="stat reveal" data-delay="3"><div class="num" data-i18n="about.stat3.num">18 h → 3 h</div><div class="label" data-i18n="about.stat3.label">Les soirs de fin de semaine</div></div>
+            <div class="stat reveal" data-delay="4"><div class="num" data-i18n="about.stat4.num">Plateau</div><div class="label" data-i18n="about.stat4.label">Coin Rachel & St-Denis</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== THREE PILLARS ===================== -->
+    <section id="piliers">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="pillars.eyebrow">Bar · Billard · Danse</p>
+          <h2 data-i18n="pillars.title">Trois bonnes raisons de monter l'escalier</h2>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal" data-delay="1">
+            <img src="Images/bar.webp" alt="Le bar du Taverna avec ses tabourets turquoise lumineux" loading="lazy" />
+            <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14l-6 8v7H11v-7L5 3z"/><path d="M8 21h8"/></svg></span>
+            <div class="pillar-body">
+              <span class="num">01</span>
+              <h3 data-i18n="pillars.bar.title">Le Bar</h3>
+              <p data-i18n="pillars.bar.text">Cocktails, bières en fût pis un système de son Meyer. Le cœur de la place.</p>
+            </div>
+          </article>
+
+          <article class="pillar reveal" data-delay="2">
+            <img src="Images/pool-table.webp" alt="Table de billard à tapis bleu près des grandes fenêtres" loading="lazy" />
+            <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/></svg></span>
+            <div class="pillar-body">
+              <span class="num">02</span>
+              <h3 data-i18n="pillars.pool.title">Le Billard</h3>
+              <p data-i18n="pillars.pool.text">Tables de billard et babyfoot pour la p'tite compétition amicale entre chums.</p>
+            </div>
+          </article>
+
+          <article class="pillar reveal" data-delay="3">
+            <img src="Images/dance-floor-painting-event.webp" alt="Foule sur le plancher de danse sous l'éclairage rouge" loading="lazy" />
+            <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span>
+            <div class="pillar-body">
+              <span class="num">03</span>
+              <h3 data-i18n="pillars.dance.title">La Danse</h3>
+              <p data-i18n="pillars.dance.text">DJ du jeudi au samedi, plancher qui lève pis danse jusqu'à 3 h du matin.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section id="ambiance">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="feat.eyebrow">L'ambiance</p>
+          <h2 data-i18n="feat.title">Tout ce qu'il te faut pour une soirée parfaite</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature reveal" data-delay="1">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/><path d="M9 18V5l12-2v13"/></svg></div>
+            <h3 data-i18n="feat.dj.title">DJ & Danse</h3>
+            <p data-i18n="feat.dj.text">Des DJ qui font lever le plancher du jeudi au samedi. Hits, throwbacks pis des beats jusqu'à la fermeture.</p>
+          </article>
+
+          <article class="feature reveal" data-delay="2">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg></div>
+            <h3 data-i18n="feat.karaoke.title">Karaoké</h3>
+            <p data-i18n="feat.karaoke.text">Prends le micro pis donne-toi un show. Les classiques québécois sont toujours un succès garanti.</p>
+          </article>
+
+          <article class="feature reveal" data-delay="3">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1z"/><path d="M8 20h8M12 16v4"/></svg></div>
+            <h3 data-i18n="feat.sports.title">Sports & Hockey</h3>
+            <p data-i18n="feat.sports.text">Les matchs du Canadien sur grand écran. Go Habs Go ! L'ambiance d'aréna, la bière à portée de main.</p>
+          </article>
+
+          <article class="feature reveal" data-delay="1">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="1.6" fill="currentColor"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+            <h3 data-i18n="feat.games.title">Billard & Babyfoot</h3>
+            <p data-i18n="feat.games.text">Tables de billard et babyfoot pour une p'tite compétition amicale entre chums.</p>
+          </article>
+
+          <article class="feature reveal" data-delay="2">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H2v6h4l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M19 5a9 9 0 0 1 0 14"/></svg></div>
+            <h3 data-i18n="feat.sound.title">Système Meyer</h3>
+            <p data-i18n="feat.sound.text">Un système de son Meyer de calibre pro. Le genre de basses que tu ressens dans ta poitrine.</p>
+          </article>
+
+          <article class="feature reveal" data-delay="3">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V8l9-5 9 5v13"/><path d="M3 12h18M3 16h18M8 8v13M16 8v13"/></svg></div>
+            <h3 data-i18n="feat.terrace.title">Terrasse ouverte</h3>
+            <p data-i18n="feat.terrace.text">Des portes de garage qui s'ouvrent grand sur le Plateau. L'air frais, la ville, pis ta gang.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LINEUP ===================== -->
+    <section id="programmation">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="line.eyebrow">Programmation</p>
+          <h2 data-i18n="line.title">La semaine au Taverna</h2>
+          <p data-i18n="line.sub">Cinq soirs par semaine de musique, de sports pis de party. Voici à quoi t'attendre.</p>
+        </div>
+
+        <div class="schedule">
+          <div class="night reveal" data-day="3">
+            <span class="day" data-i18n="line.wed.day">Mercredi</span>
+            <span class="desc" data-i18n="line.wed.desc"><strong>Soirée chill</strong> · billard, sports & cocktails</span>
+            <span class="hours"><span data-i18n="hours.18to2">18 h – 2 h</span> <span class="badge-today" data-i18n="line.today">· Aujourd'hui</span></span>
+          </div>
+          <div class="night reveal" data-day="4">
+            <span class="day" data-i18n="line.thu.day">Jeudi</span>
+            <span class="desc" data-i18n="line.thu.desc"><strong>DJ Night</strong> · on réchauffe la fin de semaine</span>
+            <span class="hours"><span data-i18n="hours.18to2">18 h – 2 h</span> <span class="badge-today" data-i18n="line.today">· Aujourd'hui</span></span>
+          </div>
+          <div class="night reveal" data-day="5">
+            <span class="day" data-i18n="line.fri.day">Vendredi</span>
+            <span class="desc" data-i18n="line.fri.desc"><strong>Grosse soirée DJ</strong> · danse jusqu'à 3 h</span>
+            <span class="hours"><span data-i18n="hours.18to3">18 h – 3 h</span> <span class="badge-today" data-i18n="line.today">· Aujourd'hui</span></span>
+          </div>
+          <div class="night reveal" data-day="6">
+            <span class="day" data-i18n="line.sat.day">Samedi</span>
+            <span class="desc" data-i18n="line.sat.desc"><strong>On remet ça</strong> · DJ & danse jusqu'à 3 h</span>
+            <span class="hours"><span data-i18n="hours.18to3">18 h – 3 h</span> <span class="badge-today" data-i18n="line.today">· Aujourd'hui</span></span>
+          </div>
+          <div class="night reveal" data-day="0">
+            <span class="day" data-i18n="line.sun.day">Dimanche</span>
+            <span class="desc" data-i18n="line.sun.desc"><strong>Karaoké & sports</strong> · finir la fin de semaine en beauté</span>
+            <span class="hours"><span data-i18n="hours.18to3">18 h – 3 h</span> <span class="badge-today" data-i18n="line.today">· Aujourd'hui</span></span>
+          </div>
+          <div class="night closed-night reveal" data-day="1,2">
+            <span class="day" data-i18n="line.mon.day">Lun & Mar</span>
+            <span class="desc" data-i18n="line.mon.desc"><strong>Fermé</strong> · on recharge les batteries</span>
+            <span class="hours" data-i18n="line.closed">Fermé</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== RESERVATIONS ===================== -->
+    <section id="reservations">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="res.eyebrow">Réservations</p>
+          <h2 data-i18n="res.title">Réserve ta place</h2>
+          <p data-i18n="res.sub">Pour une soirée entre amis, un party de bureau ou une grande célébration — on a la table qu'il te faut.</p>
+        </div>
+
+        <div class="res-grid">
+          <article class="res-card reveal" data-delay="1">
+            <div class="tag">8–30+</div>
+            <h3 data-i18n="res.groups.title">Groupes</h3>
+            <p data-i18n="res.groups.text">Tables privées pour groupes de 8 à 30+ personnes. Parfait pour les anniversaires pis les retrouvailles.</p>
+          </article>
+          <article class="res-card reveal" data-delay="2">
+            <div class="tag">5 à 7</div>
+            <h3 data-i18n="res.corp.title">Événements corporatifs</h3>
+            <p data-i18n="res.corp.text">5 à 7, team building pis partys de bureau. On s'occupe de toute, t'as juste à te présenter.</p>
+          </article>
+          <article class="res-card reveal" data-delay="3">
+            <div class="tag">✦</div>
+            <h3 data-i18n="res.celeb.title">Célébrations</h3>
+            <p data-i18n="res.celeb.text">Mariages, anniversaires pis grandes occasions. Fêtez en grand au cœur du Plateau.</p>
+          </article>
+        </div>
+
+        <div class="res-cta reveal">
+          <a href="#contact" class="btn btn-primary btn-lg" data-i18n="res.cta">Demander une réservation</a>
+          <p data-i18n="res.note">Réponse rapide · groupes de 8 à 30+</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== GALLERY ===================== -->
+    <section id="galerie">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Galerie</p>
+          <h2 data-i18n="gallery.title">Un aperçu de l'ambiance</h2>
+        </div>
+
+        <div class="gallery reveal">
+          <figure class="gtile" data-full="Images/bar.webp"><img src="Images/bar.webp" alt="Le bar et ses tabourets turquoise" loading="lazy" /><figcaption class="cap" data-i18n="gallery.bar">Le bar</figcaption></figure>
+          <figure class="gtile" data-full="Images/bartending.jpeg"><img src="Images/bartending.jpeg" alt="Le barman qui sert des shooters à la clientèle" loading="lazy" /><figcaption class="cap" data-i18n="gallery.bartending">Au comptoir</figcaption></figure>
+          <figure class="gtile" data-full="Images/Drinks.webp"><img src="Images/Drinks.webp" alt="Cocktails au comptoir" loading="lazy" /><figcaption class="cap" data-i18n="gallery.drinks">Cocktails</figcaption></figure>
+          <figure class="gtile" data-full="Images/pool-table.webp"><img src="Images/pool-table.webp" alt="Table de billard" loading="lazy" /><figcaption class="cap" data-i18n="gallery.pool">Billard</figcaption></figure>
+          <figure class="gtile" data-full="Images/dance-floor-painting-event.webp"><img src="Images/dance-floor-painting-event.webp" alt="Soirée dansante remplie" loading="lazy" /><figcaption class="cap" data-i18n="gallery.dance">Soirée dansante</figcaption></figure>
+          <figure class="gtile" data-full="Images/christmas.webp"><img src="Images/christmas.webp" alt="Le bar décoré dans une lumière rouge" loading="lazy" /><figcaption class="cap" data-i18n="gallery.holidays">Le temps des fêtes</figcaption></figure>
+          <figure class="gtile" data-full="Images/entrance.JPG"><img src="Images/entrance.JPG" alt="L'entrée et l'enseigne au néon" loading="lazy" /><figcaption class="cap" data-i18n="gallery.entrance">L'entrée</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VISIT (hours + location) ===================== -->
+    <section id="visite">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="visit.eyebrow">Heures & emplacement</p>
+          <h2 data-i18n="visit.title">Viens nous voir</h2>
+        </div>
+
+        <div class="visit-grid">
+          <div class="panel reveal">
+            <h3 style="font-family:var(--ff-display);font-weight:700;font-size:1.3rem;" data-i18n="visit.hoursTitle">Heures d'ouverture</h3>
+            <div class="hours-list">
+              <div class="hours-row" data-day="1"><span class="d" data-i18n="visit.day.mon">Lundi</span><span class="h" data-i18n="visit.closed">Fermé</span></div>
+              <div class="hours-row" data-day="2"><span class="d" data-i18n="visit.day.tue">Mardi</span><span class="h" data-i18n="visit.closed">Fermé</span></div>
+              <div class="hours-row" data-day="3"><span class="d" data-i18n="visit.day.wed">Mercredi</span><span class="h" data-i18n="hours.18to2">18 h – 2 h</span></div>
+              <div class="hours-row" data-day="4"><span class="d" data-i18n="visit.day.thu">Jeudi</span><span class="h" data-i18n="hours.18to2">18 h – 2 h</span></div>
+              <div class="hours-row" data-day="5"><span class="d" data-i18n="visit.day.fri">Vendredi</span><span class="h" data-i18n="hours.18to3">18 h – 3 h</span></div>
+              <div class="hours-row" data-day="6"><span class="d" data-i18n="visit.day.sat">Samedi</span><span class="h" data-i18n="hours.18to3">18 h – 3 h</span></div>
+              <div class="hours-row" data-day="0"><span class="d" data-i18n="visit.day.sun">Dimanche</span><span class="h" data-i18n="hours.18to3">18 h – 3 h</span></div>
+            </div>
+
+            <p style="color:var(--muted);font-size:0.92rem;margin-top:1.4rem;" data-i18n="visit.directions">Au 2<sup>e</sup> étage, coin Rachel & Saint-Denis · Métro Mont-Royal à deux pas.</p>
+          </div>
+
+          <div class="map-wrap reveal">
+            <iframe
+              title="Taverna sur la carte"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=4177+Rue+Saint-Denis,+Montreal,+QC+H2W+2M7&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">Écris-nous</h2>
+          <p data-i18n="contact.sub">Une question, une réservation ou juste pour jaser ? Envoie-nous un message directement icitte.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="form reveal" id="contact-form" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="cf-name"><span data-i18n="contact.name">Nom</span> <span class="req">*</span></label>
+                <input id="cf-name" name="name" type="text" autocomplete="name" data-i18n-ph="contact.namePh" placeholder="Ton nom" required />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="cf-email"><span data-i18n="contact.email">Courriel</span> <span class="req">*</span></label>
+                <input id="cf-email" name="email" type="email" autocomplete="email" data-i18n-ph="contact.emailPh" placeholder="toi@exemple.com" required />
+                <span class="err"></span>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="cf-phone"><span data-i18n="contact.phone">Téléphone</span> <span style="color:var(--muted-2);font-weight:400;" data-i18n="contact.phoneOpt">(optionnel)</span></label>
+                <input id="cf-phone" name="phone" type="tel" autocomplete="tel" data-i18n-ph="contact.phonePh" placeholder="(514) 000-0000" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="cf-subject" data-i18n="contact.subject">Sujet</label>
+                <select id="cf-subject" name="subject">
+                  <option value="res" data-i18n="contact.subj.res">Réservation</option>
+                  <option value="event" data-i18n="contact.subj.event">Événement privé</option>
+                  <option value="info" data-i18n="contact.subj.info">Information générale</option>
+                  <option value="other" data-i18n="contact.subj.other">Autre</option>
+                </select>
+                <span class="err"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cf-message"><span data-i18n="contact.message">Message</span> <span class="req">*</span></label>
+              <textarea id="cf-message" name="message" data-i18n-ph="contact.messagePh" placeholder="Dis-nous tout — date, nombre de personnes, occasion…" required></textarea>
+              <span class="err"></span>
+            </div>
+
+            <div class="form-status" role="status" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-primary btn-lg btn-block">
+              <span class="btn-label" data-i18n="contact.send">Envoyer le message</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-note" data-i18n="contact.note">On te revient le plus vite possible, promis.</p>
+          </form>
+
+          <aside class="contact-aside">
+            <div class="panel reveal" data-delay="1">
+              <p class="quote"><span class="accent" data-i18n="contact.quote">« On se voit à soir ! »</span></p>
+              <p class="quote-sub" data-i18n="contact.quoteSub">Bienvenue chez vous, au cœur du Plateau.</p>
+            </div>
+            <div class="panel reveal" data-delay="2">
+              <div class="contact-lines" style="margin-top:0">
+                <div class="cline">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2 4.2 2 2 0 0 1 4 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.6a16 16 0 0 0 6 6l1.1-1.1a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.7.7A2 2 0 0 1 22 16.9z"/></svg></span>
+                  <span><span class="k" data-i18n="visit.phoneK">Téléphone</span><br><a class="v" href="tel:+14388083513">(438) 808-3513</a></span>
+                </div>
+                <div class="cline">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+                  <span><span class="k" data-i18n="visit.emailK">Courriel</span><br><a class="v" href="mailto:info@tavernabar.ca">info@tavernabar.ca</a></span>
+                </div>
+                <div class="cline">
+                  <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+                  <span><span class="k" data-i18n="visit.addressK">Adresse</span><br><span class="v" data-i18n="visit.addressV">4177 rue Saint-Denis, 2<sup>e</sup> étage<br>Montréal, QC H2W 2M7</span></span>
+                </div>
+              </div>
+              <div class="socials">
+                <a class="social" href="https://www.instagram.com/taverna_mtl/" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                  @taverna_mtl
+                </a>
+                <a class="social" href="https://www.tiktok.com/@vvtaverna" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 3c.3 2.2 1.8 3.9 4 4.2v3c-1.5 0-2.9-.4-4-1.1V15a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.2A2.9 2.9 0 1 0 13 15V3h3z"/></svg>
+                  @vvtaverna
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== LIGHTBOX ===================== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lb-btn lb-close" aria-label="Fermer">✕</button>
+    <button class="lb-btn lb-prev" aria-label="Précédent">‹</button>
+    <img src="" alt="" />
+    <button class="lb-btn lb-next" aria-label="Suivant">›</button>
+    <span class="lb-cap"></span>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#accueil" aria-label="Taverna">
+            <span class="brand-mark">T</span>
+            <span class="brand-name">TAVERNA<small>MONTRÉAL · MTL</small></span>
+          </a>
+          <p data-i18n="footer.tagline">Le club social et bar mythique du Plateau-Mont-Royal. Depuis toujours, l'endroit où Montréal vient célébrer.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.explore">Explorer</h4>
+          <a href="#experience" data-i18n="nav.experience">L'Expérience</a>
+          <a href="#programmation" data-i18n="nav.lineup">Programmation</a>
+          <a href="#reservations" data-i18n="nav.reservations">Réservations</a>
+          <a href="#contact" data-i18n="nav.contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer.visitUs">Nous visiter</h4>
+          <a href="https://www.google.com/maps?q=4177+Rue+Saint-Denis,+Montreal,+QC+H2W+2M7" target="_blank" rel="noopener">4177 rue Saint-Denis</a>
+          <a href="tel:+14388083513">(438) 808-3513</a>
+          <a href="mailto:info@tavernabar.ca">info@tavernabar.ca</a>
+          <a href="https://www.instagram.com/taverna_mtl/" target="_blank" rel="noopener">Instagram · @taverna_mtl</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer.rights">© 2026 Taverna. Tous droits réservés.</span>
+        <span class="made"><span data-i18n="footer.made">Fait avec</span> <span class="heart">❤</span> <span data-i18n="footer.madeEnd">à Montréal</span> ⚜</span>
+        <div class="lang" role="group" aria-label="Language / Langue">
+          <button data-lang-btn="fr" class="active">FR</button>
+          <button data-lang-btn="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
